@@ -92,19 +92,19 @@ const startRound = () => {
     doorImage3.src = closedDoorPath;
     numClosedDoors = 3;
     currentlyPlaying = true;
-    startButton.innerHTML = "Good luck!";
+    startButton.innerHTML = "Boa Sorte!";
     randomChoreDoorGenerator();
 }
 
 const gameOver = (status) => {
     if(status === "win"){
-        startButton.innerHTML = "You win! Play again?"
+        startButton.innerHTML = "Ganhaste! Outra vez?"
         currentStreak++;
         cSelement.innerHTML = currentStreak;
         checkBestStreak();
         bSelement.innerHTML = bestStreak;
     }else {
-        startButton.innerHTML = "Game Over! Play again?"
+        startButton.innerHTML = "Perdeste! Outra vez?"
         currentStreak=0;
         cSelement.innerHTML = currentStreak;
         checkBestStreak();
